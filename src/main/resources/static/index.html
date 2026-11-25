@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wheel of Names</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Wheel of Names</h1>
+      <p>Add one name per line, then spin to pick a winner.</p>
+    </header>
+
+    <section class="layout">
+      <div class="wheel-panel">
+        <div class="wheel-wrap">
+          <div class="pointer" aria-hidden="true"></div>
+          <canvas id="wheel" aria-label="Wheel of names"></canvas>
+        </div>
+        <button id="spin-button" type="button">Spin the wheel</button>
+        <p id="result" role="status" aria-live="polite">Add names to get started.</p>
+      </div>
+
+      <div class="names-panel">
+        <label for="names">Names</label>
+        <textarea id="names" spellcheck="false">Alice
+Bob
+Charlie
+Archie
+Charmaine
+Diana</textarea>
+        <p class="hint">Enter one name per line. The API selects the winner.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
