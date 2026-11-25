@@ -1,0 +1,21 @@
+# Maven build output
+target/
+
+# IDE/Editor noise
+.idea/
+.project
+.classpath
+.settings/
+.vscode/
+
+# Compiled Java classes and packaging
+*.class
+*.jar
+*.war
+*.ear
+
+# OS-specific files
+.DS_Store
+
+# Maven wrapper (optional: keep if you want to track the wrapper jar)
+!.mvn/wrapper/maven-wrapper.jar
