@@ -1,21 +1,37 @@
-# Maven build output
-target/
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# IDE/Editor noise
-.idea/
-.project
+### STS ###
+.apt_generated
 .classpath
-.settings/
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
 .vscode/
-
-# Compiled Java classes and packaging
-*.class
-*.jar
-*.war
-*.ear
-
-# OS-specific files
-.DS_Store
-
-# Maven wrapper (optional: keep if you want to track the wrapper jar)
-!.mvn/wrapper/maven-wrapper.jar
